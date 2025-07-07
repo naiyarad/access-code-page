@@ -1,40 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crane Selection</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 80px;
+  <title>Crawler Crane Access</title>
+  <script>
+    function checkPassword() {
+      var input = prompt("Enter access code for Crawler Crane:");
+      if (input === "787900") {
+        window.location.href = "https://forms.office.com/r/GYYahjnGfu";
+      } else {
+        alert("Incorrect code.");
+      }
     }
-
-    h1 {
-      margin-bottom: 40px;
-    }
-
-    .btn {
-      display: block;
-      margin: 20px auto;
-      width: 280px;
-      padding: 15px;
-      font-size: 18px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      background-color: #218838;
-    }
-  </style>
+    window.onload = checkPassword;
+  </script>
 </head>
 <body>
-  <h1>Select Crane Type</h1>
-  <a href="https://forms.office.com/r/GYYahjnGfu" class="btn" target="_blank">Crawler Crane</a>
-
+  <h2>Checking Access...</h2>
 </body>
 </html>
