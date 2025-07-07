@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Protected Form Access</title>
-  <script>
-    function verifyCode() {
-      var code = prompt("Please enter your password:");
-      if (code === "787900") {
-        window.location.href = "menu.html";
-      } else {
-        alert("Incorrect password. Access denied.");
-      }
-    }
-  </script>
+  <title>Crane Access Portal</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 100px;
+      padding-top: 80px;
     }
 
-    button {
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: block;
+      margin: 20px auto;
+      width: 280px;
+      padding: 15px;
       font-size: 18px;
-      padding: 12px 24px;
       background-color: #007bff;
       color: white;
       border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 10px;
+      text-decoration: none;
     }
 
-    button:hover {
+    .btn:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>Authorized Access Only</h1>
-  <p>Click the button below and enter the access code to proceed.</p>
-  <button onclick="verifyCode()">Access Crane Forms</button>
+  <h1>Authorized Crane Access</h1>
+
+  <a href="crawler.html" class="btn">Crawler Crane Access</a>
+  <a href="pedestal.html" class="btn">Pedestal Crane Access</a>
+  <a href="tyre.html" class="btn">Tyre Mounted Crane Access</a>
+
 </body>
 </html>
