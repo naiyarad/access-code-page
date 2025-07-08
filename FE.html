@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crawler Crane Access</title>
+  <script>
+    function verifyCrawlerCode() {
+      var code = prompt("Welcome, you are an operator of Crawler Crane.\nPlease enter your access code which was given by the admin to access checklist.");
+      if (code === "CRAW789") {
+        window.location.href = "https://forms.office.com/r/GYYahjnGfu";
+      } else {
+        alert("Incorrect access code. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
+  <h2>Crawler Crane Access</h2>
+  <button onclick="verifyCrawlerCode()" style="padding:12px 24px; font-size:18px;">Access Code</button>
+</body>
+</html>
