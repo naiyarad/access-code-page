@@ -3,19 +3,18 @@
 <head>
   <title>Tyre Mounted Crane Access</title>
   <script>
-    function checkPassword() {
-      const input = prompt("Enter access code for Tyre Mounted Crane:");
-      if (input === "787900") {
+    function verifyTyreCode() {
+      var code = prompt("Welcome, you are an operator of Tyre Mounted Crane.\nPlease enter your access code which was given by the admin to access checklist.");
+      if (code === "TYRE456") {
         window.location.href = "https://forms.office.com/r/bcSZ8wM440";
       } else {
-        alert("Incorrect code. Access denied.");
-        window.location.href = "https://yourusername.github.io/access-code-page/";
+        alert("Incorrect access code. Please try again.");
       }
     }
-    window.onload = checkPassword;
   </script>
 </head>
-<body>
-  <h2>Authenticating...</h2>
+<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
+  <h2>Tyre Mounted Crane Access</h2>
+  <button onclick="verifyTyreCode()" style="padding:12px 24px; font-size:18px;">Access Code</button>
 </body>
 </html>
