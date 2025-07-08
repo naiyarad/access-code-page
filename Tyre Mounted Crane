@@ -5,7 +5,7 @@
   <script>
     function verifyTyreCode() {
       var code = prompt("Welcome, you are an operator of Tyre Mounted Crane.\nPlease enter your access code which was given by the admin to access checklist.");
-      if (code === "TYRE456") {
+      if (code === "787900") {
         window.location.href = "https://forms.office.com/r/bcSZ8wM440";
       } else {
         alert("Incorrect access code. Please try again.");
