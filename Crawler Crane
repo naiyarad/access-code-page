@@ -3,19 +3,18 @@
 <head>
   <title>Crawler Crane Access</title>
   <script>
-    function checkPassword() {
-      const input = prompt("Enter access code for Crawler Crane:");
-      if (input === "787900") {
+    function verifyCrawlerCode() {
+      var code = prompt("Welcome, you are an operator of Crawler Crane.\nPlease enter your access code which was given by the admin to access checklist.");
+      if (code === "787900") {
         window.location.href = "https://forms.office.com/r/GYYahjnGfu";
       } else {
-        alert("Incorrect code. Access denied.");
-        window.location.href = "https://yourusername.github.io/access-code-page/"; // Optional: redirect to home
+        alert("Incorrect access code. Please try again.");
       }
     }
-    window.onload = checkPassword;
   </script>
 </head>
-<body>
-  <h2>Authenticating...</h2>
+<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
+  <h2>Crawler Crane Access</h2>
+  <button onclick="verifyCrawlerCode()" style="padding:12px 24px; font-size:18px;">Access Code</button>
 </body>
 </html>
