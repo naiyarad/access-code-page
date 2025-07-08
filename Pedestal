@@ -4,17 +4,18 @@
   <title>Pedestal Crane Access</title>
   <script>
     function checkPassword() {
-      var input = prompt("Enter access code for Pedestal Crane:");
+      const input = prompt("Enter access code for Pedestal Crane:");
       if (input === "787900") {
         window.location.href = "https://forms.office.com/r/KnJraV7jDB";
       } else {
-        alert("Incorrect code.");
+        alert("Incorrect code. Access denied.");
+        window.location.href = "https://yourusername.github.io/access-code-page/";
       }
     }
     window.onload = checkPassword;
   </script>
 </head>
 <body>
-  <h2>Checking Access...</h2>
+  <h2>Authenticating...</h2>
 </body>
 </html>
