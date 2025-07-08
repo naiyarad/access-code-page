@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tyre Mounted Crane Access</title>
+  <title>Pedestal Crane Access</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 100px; }
+    input, button { padding: 10px; font-size: 18px; margin-top: 10px; }
+  </style>
   <script>
-    function verifyTyreCode() {
-      var code = prompt("Welcome, you are an operator of Tyre Mounted Crane.\nPlease enter your access code which was given by the admin to access checklist.");
+    function checkAccess() {
+      const code = document.getElementById("accessCode").value;
       if (code === "787900") {
         window.location.href = "https://forms.office.com/r/bcSZ8wM440";
       } else {
@@ -13,8 +17,11 @@
     }
   </script>
 </head>
-<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
-  <h2>Tyre Mounted Crane Access</h2>
-  <button onclick="verifyTyreCode()" style="padding:12px 24px; font-size:18px;">Access Code</button>
+<body>
+  <h2>Welcome, you are an operator of Pedestal Crane</h2>
+  <p>Please enter your access code which was given by the admin to access checklist.</p>
+  <input type="password" id="accessCode" placeholder="Enter Access Code" />
+  <br />
+  <button onclick="checkAccess()">Access Checklist</button>
 </body>
 </html>
