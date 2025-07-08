@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crawler Crane Access</title>
+  <title>FireExtinguisher Access</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 100px; }
+    input, button { padding: 10px; font-size: 18px; margin-top: 10px; }
+  </style>
   <script>
-    function verifyCrawlerCode() {
-      var code = prompt("Welcome, you are an operator of Crawler Crane.\nPlease enter your access code which was given by the admin to access checklist.");
-      if (code === "CRAW789") {
-        window.location.href = "https://forms.office.com/r/GYYahjnGfu";
+    function checkAccess() {
+      const code = document.getElementById("accessCode").value;
+      if (code === "FE787900") {
+        window.location.href = "https://forms.office.com/r/rkNS2LQYWT"; 
       } else {
         alert("Incorrect access code. Please try again.");
       }
     }
   </script>
 </head>
-<body style="text-align:center; font-family:sans-serif; margin-top:100px;">
-  <h2>Crawler Crane Access</h2>
-  <button onclick="verifyCrawlerCode()" style="padding:12px 24px; font-size:18px;">Access Code</button>
+<body>
+  <h2>Welcome, you are Accessing Fire Extinguisher </h2>
+  <p>Please enter your access code to access Fire Extinguisherchecklist.</p>
+  <input type="password" id="accessCode" placeholder="Enter Access Code" />
+  <br />
+  <button onclick="checkAccess()">Access Checklist</button>
 </body>
 </html>
